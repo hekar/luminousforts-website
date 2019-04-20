@@ -24,8 +24,17 @@ function Layout({ children }) {
             {children}
           </div>
 
-          <footer className="bg-blue">
+          <footer className="bg-blue-darkest">
             <div className="flex justify-end max-w-xl mx-auto p-4 md:p-8 text-sm">
+              <p className="text-white px-8">
+                <a
+                  href="https://steamcommunity.com/groups/LuminousForts"
+                  className="font-bold no-underline text-white"
+                >
+                  #Chat
+                </a>
+              </p>
+
               <p className="text-white px-8">
                 <a
                   href="https://github.com/hekar/"

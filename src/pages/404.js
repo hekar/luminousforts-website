@@ -2,7 +2,6 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import abductionIllustration from "../images/abduction-illustration.svg";
 
 function NotFoundPage() {
   return (
@@ -10,7 +9,6 @@ function NotFoundPage() {
       <SEO title="404: Not found" />
       <div>
         <img
-          src={abductionIllustration}
           className="block mx-auto w-1/2"
           alt="Ghost getting abducted by aliens"
         />

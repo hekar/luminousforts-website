@@ -6,11 +6,11 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-red">
+    <nav className="bg-red-darkest">
       <div className="flex flex-wrap items-center justify-between max-w-xl mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
           <svg
-            className="fill-current h-8 mr-2 w-8"
+            className="h-8 mr-3 w-8 stroke-current text-grey"
             width="54"
             height="54"
             viewBox="0 0 16 16"
@@ -83,7 +83,7 @@ function Header({ siteTitle }) {
 
             <Link
               to="/entities"
-              className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
+              className="block md:inline-block mr-8 mt-4 md:mt-0 no-underline text-white"
             >
               Entities
             </Link>
