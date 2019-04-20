@@ -20,28 +20,27 @@ function Layout({ children }) {
         <div className="flex flex-col font-sans min-h-screen text-grey-darkest">
           <Header siteTitle={data.site.siteMetadata.title} />
 
-          <div className="flex flex-col flex-1 md:justify-center max-w-xl mx-auto px-4 py-8 md:p-8 w-full">
+          <div className="flex flex-col flex-1 md:justify-start max-w-xl mx-auto px-4 py-8 md:p-8 w-full">
             {children}
           </div>
 
           <footer className="bg-blue">
-            <div className="flex justify-between max-w-xl mx-auto p-4 md:p-8 text-sm">
-              <p className="text-white">
-                Created by{" "}
+            <div className="flex justify-end max-w-xl mx-auto p-4 md:p-8 text-sm">
+              <p className="text-white px-8">
                 <a
-                  href="https://taylorbryant.blog"
+                  href="https://github.com/hekar/"
                   className="font-bold no-underline text-white"
                 >
-                  Taylor Bryant
+                  #Based on the Source SDK
                 </a>
               </p>
 
               <p>
                 <a
-                  href="https://github.com/taylorbryant/gatsby-starter-tailwind"
+                  href="https://github.com/hekar/luminousforts-2013/"
                   className="font-bold no-underline text-white"
                 >
-                  GitHub
+                  #Source Code
                 </a>
               </p>
             </div>
