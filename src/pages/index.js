@@ -15,7 +15,7 @@ const roadmap = {
   rows: [
     ['Capture the flag', 'Build a base and defend your flag', 'Defects', ''],
     ['Domination', 'Control points to increase your block limit and win', '', ''],
-    ['Survival', 'Fend off against hords of Zombies', '', ''],
+    ['Survival', 'Fend off against hordes of Zombies', '', ''],
     ['Custom', 'Map determines who wins through Lua and custom objectives', '', ''],
   ]
 };
