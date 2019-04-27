@@ -1,0 +1,277 @@
+{
+    "includes": [],
+    "entities": [
+      {
+        "name": "lfcus_point_blockspawner",
+        "type": "PointClass",
+        "description": "Luminousforts Custom: Custom Blockspawner",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "Angles",
+              "Targetname",
+              "TwoTeams",
+              "EnableDisable",
+              "Studiomodel"
+            ]
+          },
+          {
+            "name": "iconsprite",
+            "values": [
+              "editor/blockspawner_cus.vmt"
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "type": "choices",
+            "name": "FollowBlockLimit",
+            "title": "FollowBlockLimit",
+            "deflt": 1,
+            "choices": {
+              "1": "True",
+              "2": "False"
+            }
+          },
+          {
+            "type": "choices",
+            "name": "BlockDestructable",
+            "title": "BlockDestructable",
+            "deflt": 1,
+            "choices": {
+              "0": "False",
+              "1": "True"
+            }
+          },
+          {
+            "type": "integer",
+            "name": "BlockHealth",
+            "title": "BlockHealth",
+            "deflt": 4000
+          },
+          {
+            "type": "choices",
+            "name": "BlockWorth",
+            "title": "BlockWorth",
+            "deflt": 1,
+            "choices": {
+              "1": "1x2",
+              "2": "1x3",
+              "3": "1x4",
+              "4": "1x5",
+              "5": "2x2",
+              "6": "2x3",
+              "7": "2x4",
+              "8": "2x5",
+              "9": "3x3",
+              "10": "3x4",
+              "11": "3x5"
+            }
+          }
+        ],
+        "inputs": [
+          {
+            "name": "Spawn",
+            "description": "Spawn block",
+            "type": "void"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "OnSpawn",
+            "description": "On block spawn",
+            "type": "void"
+          }
+        ]
+      },
+      {
+        "name": "lfcus_prop_block_custom",
+        "type": "PointClass",
+        "description": "Luminousforts 1.0: Custom Block",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "Angles",
+              "Targetname",
+              "ThreeTeams",
+              "BlockBase"
+            ]
+          },
+          {
+            "name": "iconsprite",
+            "values": [
+              "editor/blockspawner_prop.vmt"
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "type": "string",
+            "name": "BlockModel",
+            "title": "BlockModel",
+            "deflt": "models/construct/blocks/rect_1x2.mdl"
+          }
+        ]
+      },
+      {
+        "name": "lfcus_block_manager",
+        "type": "PointClass",
+        "description": "Luminousforts Custom: Global manager for blocks",
+        "parameters": [
+          {
+            "name": "iconsprite",
+            "values": [
+              "editor/blockmanager.vmt"
+            ]
+          }
+        ],
+        "inputs": [
+          {
+            "name": "DisableBlockDestruction",
+            "description": "Enable the destructable attribute on blocks",
+            "type": "void"
+          },
+          {
+            "name": "EnableBlockDestruction",
+            "description": "Disable the destructable attribute on blocks",
+            "type": "void"
+          },
+          {
+            "name": "SetBlockLimit",
+            "description": "Change the block limit for both teams",
+            "type": "integer"
+          },
+          {
+            "name": "SetRedBlockLimit",
+            "description": "Change the block limit for the red team",
+            "type": "integer"
+          },
+          {
+            "name": "SetBlueBlockLimit",
+            "description": "Change the block limit for the blue team",
+            "type": "integer"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "OnRedBlockLimitReached",
+            "description": "Triggered when the Red team reaches their block limit",
+            "type": "void"
+          },
+          {
+            "name": "OnBlueBlockLimitReached",
+            "description": "Triggered when the Blue team reaches their block limit",
+            "type": "void"
+          },
+          {
+            "name": "OnRedBlockSpawned",
+            "description": "Triggered when a Red block is spawned",
+            "type": "void"
+          },
+          {
+            "name": "OnBlueBlockSpawned",
+            "description": "Triggered when a Blue block is spawned",
+            "type": "void"
+          }
+        ]
+      },
+      {
+        "name": "lfcus_manager_hud",
+        "type": "PointClass",
+        "description": "Luminousforts Custom: Hud Manager",
+        "flags": [
+          {
+            "title": "No Hud Elements",
+            "value": 0,
+            "enabled": false
+          },
+          {
+            "title": "All Hud Elements",
+            "value": 1,
+            "enabled": true
+          },
+          {
+            "title": "Block Health",
+            "value": 2,
+            "enabled": false
+          },
+          {
+            "title": "Flag Carrier",
+            "value": 4,
+            "enabled": false
+          },
+          {
+            "title": "Flag Compass",
+            "value": 8,
+            "enabled": false
+          },
+          {
+            "title": "Flag Position",
+            "value": 16,
+            "enabled": false
+          },
+          {
+            "title": "Phase Time",
+            "value": 32,
+            "enabled": false
+          },
+          {
+            "title": "Player Markers",
+            "value": 64,
+            "enabled": false
+          },
+          {
+            "title": "Freeze Progress",
+            "value": 128,
+            "enabled": false
+          },
+          {
+            "title": "Capture Points",
+            "value": 256,
+            "enabled": false
+          },
+          {
+            "title": "Capture Positions",
+            "value": 512,
+            "enabled": false
+          }
+        ],
+        "inputs": [
+          {
+            "name": "EnableHudElement",
+            "type": "integer"
+          },
+          {
+            "name": "DisableHudElement",
+            "type": "integer"
+          }
+        ]
+      },
+      {
+        "name": "lfcus_score_manager",
+        "type": "PointClass",
+        "description": "Luminousforts Custom: Score Manager",
+        "inputs": [
+          {
+            "name": "GiveRedPoints",
+            "type": "integer"
+          },
+          {
+            "name": "GiveBluePoints",
+            "type": "integer"
+          },
+          {
+            "name": "TakeRedPoints",
+            "type": "integer"
+          },
+          {
+            "name": "TakeBluePoints",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  }
+  

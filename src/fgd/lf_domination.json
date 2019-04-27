@@ -1,0 +1,122 @@
+{
+    "includes": [],
+    "entities": [
+      {
+        "name": "lfd_capture_zone",
+        "type": "SolidClass",
+        "description": "Luminousforts 1.0: Domination Capture Zone",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "EnableDisable"
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "type": "integer",
+            "name": "SecondsToCapture",
+            "title": "Seconds to Capture",
+            "deflt": 12
+          },
+          {
+            "type": "integer",
+            "name": "PointIncrease",
+            "title": "Points Increase per Interval",
+            "deflt": 0
+          },
+          {
+            "type": "integer",
+            "name": "PointIncreaseInterval",
+            "title": "Point Increase Interval (seconds)",
+            "deflt": 5
+          },
+          {
+            "type": "choices",
+            "name": "DisableInBuild",
+            "title": "Disable in Build",
+            "deflt": 1,
+            "choices": {
+              "1": "True",
+              "2": "False"
+            }
+          },
+          {
+            "type": "choices",
+            "name": "Locked",
+            "title": "Capture point is locked and cannot be captured",
+            "deflt": 0,
+            "choices": {
+              "0": "Unlocked",
+              "1": "Locked"
+            }
+          },
+          {
+            "type": "integer",
+            "name": "ZoneId",
+            "title": "Zone id of the Node",
+            "deflt": 0
+          },
+          {
+            "type": "integer",
+            "name": "ParentZone1",
+            "title": "Id of the 1st parent Node",
+            "deflt": 0
+          },
+          {
+            "type": "integer",
+            "name": "ParentZone2",
+            "title": "Id of the 2nd parent Node ",
+            "deflt": 0
+          },
+          {
+            "type": "integer",
+            "name": "ParentZone3",
+            "title": "Id of the 3rd parent Node",
+            "deflt": 0
+          }
+        ],
+        "inputs": [
+          {
+            "name": "DisablesCaptures",
+            "description": "Disable the ability to capture",
+            "type": "void"
+          },
+          {
+            "name": "EnableCaptures",
+            "description": "Enable the ability to capture",
+            "type": "void"
+          },
+          {
+            "name": "Lock",
+            "description": "Lock the capture point (same as disable, but shows the lock icon)",
+            "type": "void"
+          },
+          {
+            "name": "Unlock",
+            "description": "Unlock the capture point (same as enable, but removes the lock icon)",
+            "type": "void"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "OnCaptured",
+            "description": "Fired on capture",
+            "type": "void"
+          },
+          {
+            "name": "OnCapturedBy",
+            "description": "Fired on capture with teamnumber",
+            "type": "integer"
+          },
+          {
+            "name": "OnLost",
+            "description": "Fired on capture point lost with teamnumber",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  }
+  

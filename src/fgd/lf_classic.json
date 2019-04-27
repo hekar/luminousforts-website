@@ -1,0 +1,1220 @@
+{
+  "includes": [],
+  "entities": [
+    {
+      "name": "TwoTeams",
+      "type": "BaseClass",
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 2,
+          "choices": {
+            "2": "Blue",
+            "3": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ThreeTeams",
+      "type": "BaseClass",
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Both",
+            "2": "Blue",
+            "3": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "BlockBase",
+      "type": "BaseClass",
+      "properties": [
+        {
+          "type": "choices",
+          "name": "CountBlock",
+          "title": "CountBlock",
+          "deflt": 1,
+          "choices": {
+            "0": "False",
+            "1": "True"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "Frozen",
+          "title": "Frozen",
+          "deflt": 1,
+          "choices": {
+            "0": "False",
+            "1": "True"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 2,
+          "choices": {
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "integer",
+          "name": "BlockWorth",
+          "title": "BlockHealth",
+          "deflt": 4000
+        },
+        {
+          "type": "choices",
+          "name": "BlockDestructable",
+          "title": "BlockDestructable",
+          "deflt": 1,
+          "choices": {
+            "0": "False",
+            "1": "True"
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "name": "Freeze",
+          "description": "Freeze the block",
+          "type": "void"
+        },
+        {
+          "name": "UnFreeze",
+          "description": "UnFreeze the block",
+          "type": "void"
+        },
+        {
+          "name": "Dispose",
+          "description": "Dispose the block",
+          "type": "void"
+        },
+        {
+          "name": "EnableDestructable",
+          "description": "Enable Destruction on the block",
+          "type": "void"
+        },
+        {
+          "name": "DisableDestructable",
+          "description": "Disable Destruction on the block",
+          "type": "void"
+        },
+        {
+          "name": "SetHealth",
+          "description": "Change the block health",
+          "type": "integer"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OnDisposed",
+          "description": "On Block Being Disposed",
+          "type": "void"
+        },
+        {
+          "name": "OnFrozen",
+          "description": "On Block Frozen",
+          "type": "void"
+        },
+        {
+          "name": "OnUnFrozen",
+          "description": "On Block UnFrozen",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block1x2",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 1x2 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_1x2.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block1x3",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 1x3 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_1x3.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block1x4",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 1x4 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_1x4.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block1x5",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 1x5 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_1x5.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block2x2",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 2x2 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_2x2.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block2x3",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 2x3 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_2x3.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block2x4",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 2x4 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_2x4.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block2x5",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 2x5 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_2x5.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block3x3",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 3x3 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_3x3.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block3x4",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 3x4 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_3x4.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_block3x5",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: 3x5 Block",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "BlockBase"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/construct/blocks/rect_3x5.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Neutral",
+            "2": "Blue",
+            "3": "Red"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 0,
+          "choices": {
+            "0": "Neutral",
+            "7": "Blue",
+            "14": "Red"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_prop_flag",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: Flag",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "ThreeTeams",
+            "EnableDisable"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/roller.mdl"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "name": "ChangeSpawnLocation",
+          "description": "Change the respawn location for the flag",
+          "type": "void"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OnScore",
+          "description": "On flag capture",
+          "type": "void"
+        },
+        {
+          "name": "OnPickup",
+          "description": "On the flag being picked up",
+          "type": "void"
+        },
+        {
+          "name": "OnDropped",
+          "description": "On dropping of flag",
+          "type": "void"
+        },
+        {
+          "name": "OnReturned",
+          "description": "On return of flag",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_item_ammo_crate",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: Ammo Crate",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Targetname",
+            "Angles",
+            "ThreeTeams"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/crate/crate.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "skin",
+          "title": "Skin",
+          "deflt": 1,
+          "choices": {
+            "1": "Blue",
+            "2": "Red",
+            "3": "Both"
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "name": "InputKill",
+          "description": "Kill the crate",
+          "type": "void"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OnUsed",
+          "description": "On crate opened",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_item_healthcharger",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: Health Charger",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Targetname",
+            "Angles",
+            "ThreeTeams"
+          ]
+        },
+        {
+          "name": "studio",
+          "values": [
+            "models/props_combine/health_charger001.mdl"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "string",
+          "name": "_minlight",
+          "title": "Minimum light level"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OutRemainingHealth",
+          "description": "Remaining Health.",
+          "type": "float"
+        },
+        {
+          "name": "OnPlayerUse",
+          "description": "Fired when the player +USEs the charger.",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_point_blockspawner",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: Block spawner",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "TwoTeams",
+            "EnableDisable"
+          ]
+        },
+        {
+          "name": "iconsprite",
+          "values": [
+            "editor/blockspawner.vmt"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "block",
+          "title": "Block Number",
+          "deflt": 1,
+          "choices": {
+            "1": "1x2",
+            "2": "1x3",
+            "3": "1x4",
+            "4": "1x5",
+            "5": "2x2",
+            "6": "2x3",
+            "7": "2x4",
+            "8": "2x5",
+            "9": "3x3",
+            "10": "3x4",
+            "11": "3x5"
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "name": "Spawn",
+          "description": "Spawns a block",
+          "type": "void"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OnSpawn",
+          "description": "On block spawn",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_random_blockspawner",
+      "type": "PointClass",
+      "description": "Luminousforts 1.0: Random Block spawner",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Angles",
+            "Targetname",
+            "TwoTeams",
+            "EnableDisable"
+          ]
+        },
+        {
+          "name": "iconsprite",
+          "values": [
+            "editor/blockspawner_rand.vmt"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "name": "RandomSpawn",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_trigger_flagzone",
+      "type": "SolidClass",
+      "description": "Luminousforts 1.0: FlagCap Zone",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "EnableDisable",
+            "ThreeTeams"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Both teams score",
+            "2": "Blue Scores",
+            "3": "Red Scores"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lfc_trigger_nofreeze",
+      "type": "SolidClass",
+      "description": "Luminousforts 1.0: No blocks may be frozen in this zone",
+      "properties": [
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Both teams cannot freeze",
+            "2": "Blue cannot freeze",
+            "3": "Red cannot freeze"
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "name": "AllowFreeze",
+          "type": "void"
+        },
+        {
+          "name": "DisallowFreeze",
+          "type": "void"
+        },
+        {
+          "name": "AllowRedFreeze",
+          "type": "void"
+        },
+        {
+          "name": "DisallowRedFreeze",
+          "type": "void"
+        },
+        {
+          "name": "AllowBlueFreeze",
+          "type": "void"
+        },
+        {
+          "name": "DisallowBlueFreeze",
+          "type": "void"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OnBlockTouch",
+          "type": "void"
+        },
+        {
+          "name": "OnRedBlockTouch",
+          "type": "void"
+        },
+        {
+          "name": "OnBlueBlockTouch",
+          "type": "void"
+        },
+        {
+          "name": "OnRedPlayerTouch",
+          "type": "void"
+        },
+        {
+          "name": "OnBluePlayerTouch",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_trigger_disposer",
+      "type": "SolidClass",
+      "description": "Luminousforts 1.0: disposer",
+      "properties": [
+        {
+          "type": "choices",
+          "name": "dissolve",
+          "title": "Dissolve Blocks",
+          "deflt": 0,
+          "choices": {
+            "0": "Do not dissolve, just remove",
+            "1": "Use dissolve effect on blocks"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "team",
+          "title": "Team",
+          "deflt": 1,
+          "choices": {
+            "1": "Everything is disposed",
+            "2": "Blue team may touch",
+            "3": "Red team may touch"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OnDisposeBlock",
+          "description": "On the disposal of a block",
+          "type": "void"
+        },
+        {
+          "name": "OnDisposePlayer",
+          "description": "On the disposal of a player (dissolve a player)",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "name": "lfc_button_build",
+      "type": "SolidClass",
+      "description": "func_button that only works in the build phase",
+      "parameters": [
+        {
+          "name": "base",
+          "values": [
+            "Targetname",
+            "Parentname",
+            "Origin",
+            "RenderFields",
+            "DamageFilter",
+            "Button"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "type": "angle",
+          "name": "movedir",
+          "title": "Move Direction (Pitch Yaw Roll)",
+          "description": "Specifies the direction of motion to move when the button is used.",
+          "deflt": "0 0 0"
+        },
+        {
+          "type": "integer",
+          "name": "speed",
+          "title": "Speed",
+          "description": "The speed that the button moves, in inches per second.",
+          "deflt": 5
+        },
+        {
+          "type": "integer",
+          "name": "health",
+          "title": "Health (Obsolete)",
+          "description": "Legacy method of specifying whether or not the button can be shot to activate it. Use the 'Damage Activates' spawnflag instead.",
+          "deflt": 0
+        },
+        {
+          "type": "integer",
+          "name": "lip",
+          "title": "Lip",
+          "description": "The amount, in inches, of the button to leave sticking out of the wall it recedes into when pressed. Negative values make the button recede even further into the wall.",
+          "deflt": 0
+        },
+        {
+          "type": "string",
+          "name": "master",
+          "title": "Master (Obsolete)",
+          "description": "Legacy support: The name of a master entity. If the master hasn't been activated, this button cannot be pressed."
+        },
+        {
+          "type": "choices",
+          "name": "sounds",
+          "title": "Sounds",
+          "deflt": 0,
+          "choices": {
+            "0": "None (Silent)",
+            "1": "Big zap & Warmup",
+            "2": "Access Denied",
+            "3": "Access Granted",
+            "4": "Quick Combolock",
+            "5": "Power Deadbolt 1",
+            "6": "Power Deadbolt 2",
+            "7": "Plunger",
+            "8": "Small zap",
+            "9": "Keycard Sound",
+            "10": "Buzz",
+            "11": "Buzz Off",
+            "12": "latch locked",
+            "13": "Latch Unlocked",
+            "14": "Lightswitch",
+            "15": "small bleek",
+            "16": "small deny",
+            "17": "small doop",
+            "18": "small tech deny",
+            "19": "click and combine screen fuzz",
+            "20": "roomy beep",
+            "21": "lever or wheel: turn + move sqeek",
+            "22": "lever or wheel: latch + release gas",
+            "23": "lever or wheel: ratchet + sqeek",
+            "24": "lever or wheel: large ratchet",
+            "25": "lever or wheel: clanky + gas release",
+            "26": "lever or wheel: latch + large metal thud",
+            "27": "lever or wheel: smaller ratchet",
+            "28": "lever or wheel: smaller lever move",
+            "31": "shock buzz",
+            "32": "clickbeep",
+            "33": "tech blip",
+            "34": "clickbeepbeep open",
+            "35": "small high blip",
+            "36": "small tech fuzz blip",
+            "37": "small click bleep (change to lightswitch)",
+            "40": "combine door lock - locked",
+            "41": "combine blip growl",
+            "42": "combine squick growl",
+            "43": "combine whine purr",
+            "44": "combine click talk",
+            "45": "combine click growl fizz",
+            "46": "combine click fizz (deny)",
+            "47": "combine click talker"
+          }
+        },
+        {
+          "type": "integer",
+          "name": "wait",
+          "title": "Delay Before Reset (-1 stay)",
+          "description": "Amount of time, in seconds, after the button has been pressed before it returns to the starting position. Once it has returned, it can be used again. If the value is set to -1, the button never returns.",
+          "deflt": 3
+        },
+        {
+          "type": "choices",
+          "name": "locked_sound",
+          "title": "Locked Sound",
+          "description": "Sound played when the player tries to use the button, and fails because it's locked.",
+          "deflt": 0,
+          "choices": {
+            "0": "None",
+            "2": "Access Denied",
+            "8": "Small zap",
+            "10": "Buzz",
+            "11": "Buzz Off",
+            "12": "Latch Locked"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "unlocked_sound",
+          "title": "Unlocked Sound",
+          "description": "Sound played when the button is unlocked.",
+          "deflt": 0,
+          "choices": {
+            "0": "None",
+            "1": "Big zap & Warmup",
+            "3": "Access Granted",
+            "4": "Quick Combolock",
+            "5": "Power Deadbolt 1",
+            "6": "Power Deadbolt 2",
+            "7": "Plunger",
+            "8": "Small zap",
+            "9": "Keycard Sound",
+            "10": "Buzz",
+            "13": "Latch Unlocked",
+            "14": "Lightswitch"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "locked_sentence",
+          "title": "Locked Sentence",
+          "description": "A sentence played when the player tries to use the button, and fails because it's locked.",
+          "deflt": 0,
+          "choices": {
+            "0": "None",
+            "1": "Gen. Access Denied",
+            "2": "Security Lockout",
+            "3": "Blast Door",
+            "4": "Fire Door",
+            "5": "Chemical Door",
+            "6": "Radiation Door",
+            "7": "Gen. Containment",
+            "8": "Maintenance Door",
+            "9": "Broken Shut Door"
+          }
+        },
+        {
+          "type": "choices",
+          "name": "unlocked_sentence",
+          "title": "Unlocked Sentence",
+          "description": "A sentence played when the button is unlocked.",
+          "deflt": 0,
+          "choices": {
+            "0": "None",
+            "1": "Gen. Access Granted",
+            "2": "Security Disengaged",
+            "3": "Blast Door",
+            "4": "Fire Door",
+            "5": "Chemical Door",
+            "6": "Radiation Door",
+            "7": "Gen. Containment",
+            "8": "Maintenance area"
+          }
+        },
+        {
+          "type": "string",
+          "name": "_minlight",
+          "title": "Minimum Light Level",
+          "description": "The minimum level of ambient light that hits this brush."
+        }
+      ],
+      "flags": [
+        {
+          "title": "Don't move",
+          "value": 1,
+          "enabled": false
+        },
+        {
+          "title": "Toggle",
+          "value": 32,
+          "enabled": false
+        },
+        {
+          "title": "Touch Activates",
+          "value": 256,
+          "enabled": false
+        },
+        {
+          "title": "Damage Activates",
+          "value": 512,
+          "enabled": false
+        },
+        {
+          "title": "Use Activates",
+          "value": 1024,
+          "enabled": true
+        },
+        {
+          "title": "Starts locked",
+          "value": 2048,
+          "enabled": false
+        },
+        {
+          "title": "Sparks",
+          "value": 4096,
+          "enabled": false
+        }
+      ]
+    }
+  ]
+}

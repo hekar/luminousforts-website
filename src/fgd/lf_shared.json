@@ -1,0 +1,236 @@
+{
+    "includes": [],
+    "entities": [
+      {
+        "name": "lf_logic_gamecontrol",
+        "type": "PointClass",
+        "description": "Luminousforts 1.0: GameController",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "Targetname"
+            ]
+          },
+          {
+            "name": "iconsprite",
+            "values": [
+              "editor/gamecontrol.vmt"
+            ]
+          }
+        ],
+        "inputs": [
+          {
+            "name": "TogglePhase",
+            "description": "Toggle the phase (Build/Combat)",
+            "type": "void"
+          },
+          {
+            "name": "SwitchToBuild",
+            "description": "Switch to Build phase",
+            "type": "void"
+          },
+          {
+            "name": "SwitchToCombat",
+            "description": "Switch to Combat phase",
+            "type": "void"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "OnBuildPhase",
+            "description": "On Build Phase",
+            "type": "void"
+          },
+          {
+            "name": "OnCombatPhase",
+            "description": "On Combat Phase",
+            "type": "void"
+          }
+        ]
+      },
+      {
+        "name": "filter_activator_team",
+        "type": "FilterClass",
+        "description": "A filter that filters by the team of the activator.",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "BaseFilter"
+            ]
+          },
+          {
+            "name": "iconsprite",
+            "values": [
+              "editor/filterteam.vmt"
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "type": "choices",
+            "name": "filterteam",
+            "title": "Filter Team Number",
+            "description": "The team number to filter by.  If the filter mode is Allow, only entities whose team number matches the given team will pass the filter. If the filter mode is Disallow, all entities EXCEPT those whose team number matches the given team will pass the filter.",
+            "deflt": 2,
+            "choices": {
+              "2": "Blue",
+              "3": "Red"
+            }
+          }
+        ]
+      },
+      {
+        "name": "lf_player_spawnpoint",
+        "type": "PointClass",
+        "description": "Luminousforts 1.0: Spawnpoint",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "Targetname",
+              "Angles",
+              "EnableDisable",
+              "ThreeTeams"
+            ]
+          },
+          {
+            "name": "studio",
+            "values": [
+              "models/editor/playerstart.mdl"
+            ]
+          }
+        ],
+        "inputs": [
+          {
+            "name": "Disable",
+            "description": "Disables Spawnpoint",
+            "type": "void"
+          },
+          {
+            "name": "Enable",
+            "description": "Enables Spawnpoint",
+            "type": "void"
+          }
+        ]
+      },
+      {
+        "name": "lf_copyright",
+        "type": "PointClass",
+        "description": "Luminousforts 1.0: Copyright entity for Mappers",
+        "parameters": [
+          {
+            "name": "iconsprite",
+            "values": [
+              "editor/copyright.vmt"
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "type": "string",
+            "name": "oauthor",
+            "title": "Original Author",
+            "description": "Original Author of the map",
+            "deflt": ""
+          },
+          {
+            "type": "string",
+            "name": "odate",
+            "title": "Original Date",
+            "description": "Date of Original Author's release",
+            "deflt": ""
+          },
+          {
+            "type": "string",
+            "name": "odescription",
+            "title": "Original Description",
+            "description": "Description by original author of the map",
+            "deflt": ""
+          },
+          {
+            "type": "string",
+            "name": "uauthor",
+            "title": "Updated Author",
+            "description": "Updated Author of the map",
+            "deflt": ""
+          },
+          {
+            "type": "string",
+            "name": "udate",
+            "title": "Updated Date",
+            "description": "Date of Updated Author's release",
+            "deflt": ""
+          },
+          {
+            "type": "string",
+            "name": "udescription",
+            "title": "Updated Description",
+            "description": "Description by updated author of the map",
+            "deflt": ""
+          }
+        ]
+      },
+      {
+        "name": "info_player_red",
+        "type": "PointClass",
+        "description": "",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "Targetname",
+              "Angles",
+              "EnableDisable"
+            ]
+          },
+          {
+            "name": "studio",
+            "values": [
+              "models/editor/player_red.mdl"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "info_player_blue",
+        "type": "PointClass",
+        "description": "",
+        "parameters": [
+          {
+            "name": "base",
+            "values": [
+              "Targetname",
+              "Angles",
+              "EnableDisable"
+            ]
+          },
+          {
+            "name": "studio",
+            "values": [
+              "models/editor/player_blue.mdl"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lf_func_spawndoor",
+        "type": "SolidClass",
+        "description": "Luminousforts 1.0: Team based spawn door",
+        "properties": [
+          {
+            "type": "choices",
+            "name": "team",
+            "title": "Team",
+            "deflt": 2,
+            "choices": {
+              "2": "Blue team may pass through",
+              "3": "Red team may pass through"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
