@@ -102,6 +102,7 @@ function EntitiesPage() {
       />
       <h1 className="">Entities</h1>
       <p className="mt-4">The LuminousForts entities visible in Hammer</p>
+      <p className="mt-4"><a href="https://developer.valvesoftware.com/wiki/FGD">FGD</a> files are found in the <a href="https://github.com/hekar/luminousforts/tree/master/fgd">repository fgd folder</a></p>
 
       <h2 className="mt-16">Shared</h2>
       <p className="mt-4">

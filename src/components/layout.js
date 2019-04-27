@@ -25,33 +25,25 @@ function Layout({ children }) {
           </div>
 
           <footer className="bg-blue-darkest">
-            <div className="flex justify-end max-w-xl mx-auto p-4 md:p-8 text-sm">
-              <p className="text-white px-8">
+            <div className="flex justify-between max-w-xl mx-auto p-4 md:p-8 text-sm">
+              <p className="text-white">
+                Based on the Source SDK - Copyright 2019
+              </p>
+              <div>
                 <a
                   href="https://steamcommunity.com/groups/LuminousForts"
                   className="font-bold no-underline text-white"
                 >
-                  #Chat
+                  Community
                 </a>
-              </p>
 
-              <p className="text-white px-8">
-                <a
-                  href="https://github.com/hekar/"
-                  className="font-bold no-underline text-white"
-                >
-                  #Based on the Source SDK
-                </a>
-              </p>
-
-              <p>
                 <a
                   href="https://github.com/hekar/luminousforts-2013/"
-                  className="font-bold no-underline text-white"
+                  className="pl-8 font-bold no-underline text-white"
                 >
-                  #Source Code
+                  Source Code
                 </a>
-              </p>
+              </div>
             </div>
           </footer>
         </div>

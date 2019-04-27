@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 function DocPage() {
   return (
@@ -12,7 +12,7 @@ function DocPage() {
       />
 
       <div className="container mx-auto">
-        
+        <h1>Documentation</h1>
       </div>
 
     </Layout>
