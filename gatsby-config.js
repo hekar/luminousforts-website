@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/luminousforts-website`,
   siteMetadata: {
     title: `LuminousForts`,
     description: `Modification of Source SDK 2013`,
