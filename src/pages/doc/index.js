@@ -30,6 +30,7 @@
           <p>There are multiple ways to configure a LuminousForts dedicated server, but the easiest way is to use an existing Docker image</p>
           <ol>
             <li><Link className="no-underline" to="/doc/ds">Dedicated Server</Link></li>
+            <li><Link className="no-underline" to="/doc/ds/sourcemod">Sourcemod</Link></li>
           </ol>
 
           <h2>Modelling</h2>
