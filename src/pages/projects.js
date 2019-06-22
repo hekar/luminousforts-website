@@ -23,25 +23,25 @@ function ProjectsPage() {
                 <tr>
                     <td className="py-3 pr-16"><a
                         className="text-black"
-                        href="https://github.com/hekar/luminousforts">LuminousForts</a></td>
+                        href="https://github.com/hekar/luminousforts">luminousforts</a></td>
                     <td className="py-3 pr-16">Game assets and files based on HL2DM</td>
                 </tr>
                 <tr>
                     <td className="py-3 pr-16"><a
                         className="text-black"
-                        href="https://github.com/hekar/luminousforts-2013">Source Code</a></td>
+                        href="https://github.com/hekar/luminousforts-2013">luminousforts-2013</a></td>
                     <td className="py-3 pr-16">C++ source code used to create the game</td>
                 </tr>
                 <tr>
                     <td className="py-3 pr-16"><a
                         className="text-black"
-                        href="https://github.com/hekar/luminousforts-website/">Website</a></td>
+                        href="https://github.com/hekar/luminousforts-website/">luminousforts-website</a></td>
                     <td className="py-3 pr-16">This Website, statically generated and built on Gatsby.js</td>
                 </tr>
                 <tr>
                     <td className="py-3 pr-16"><a
                         className="text-black"
-                        href="https://github.com/hekar/ssdk-2013-tools">Source SDK 2013 Tools</a></td>
+                        href="https://github.com/hekar/ssdk-2013-tools">ssdk-2013-tools</a></td>
                     <td className="py-3 pr-16">Node.js based tools for working with the Source SDK</td>
                 </tr>
             </tbody>
