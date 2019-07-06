@@ -33,9 +33,9 @@ function DocCompilingPage() {
         <p>It is suggested that you place your "luminousforts-2013" source code in your $HOME folder and mount the $HOME as a volume in the Docker container.</p>
 
         <p className="font-bold">Create Docker Container</p>
-        <pre><code>{`sudo docker pull docker push hekar/luminousforts-ci
+        <pre><code>{`sudo docker pull hekar/luminousforts-ci
 cd ~
-sudo docker run -t -i -v $(pwd):$(pwd) -w $(pwd) hekar/luminousforts-ci /bin/bash`}</code></pre>
+sudo docker run --rm -t -i -v $(pwd):$(pwd) -w $(pwd) -e HOME=$(pwd) hekar/luminousforts-ci /bin/bash`}</code></pre>
 
         <h3 className="py-4">Within the Docker container</h3>
         
