@@ -51,6 +51,12 @@ make -f everything.mak`}</code></pre>
 make -f everything.mak &&
 rsync --progress -v ../game/mod_hl2mp/bin/* $HOME/.steam/steam/steamapps/sourcemods/luminousforts/bin/`}</code>
 
+        <p className="font-bold">Compile debug and copy</p>
+        <code>{`CFG=debug make -f everything.mak &&
+rsync --progress -v ../game/mod_hl2mp/bin/* $HOME/.steam/steam/steamapps/sourcemods/luminousforts/bin/`}</code>
+
+        <p className="font-bold">Clean</p>
+        <code>{`make -f everything.mak clean`}</code>
       </div>
 
     </Layout>
